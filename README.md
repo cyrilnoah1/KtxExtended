@@ -2,7 +2,7 @@
 
 KTX Extended utilises the existing Android KTX extensions and builds on it by providing additional 
 Kotlin extensions that help aid your development. The library includes some support library 
-extensions that help that help reduce the boilerplate in many of our Android projects. 
+extensions that help reduce the boilerplate in many of our Android projects. 
 
 ### Without KTX Extended
 ```kotlin
@@ -16,14 +16,14 @@ extensions that help that help reduce the boilerplate in many of our Android pro
             ActivityCompat.requestPermissions(
                     this, 
                     arrayOf(Manifest.permission.CAMERA),
-                    CAMERA_REQUEST_CORE
+                    CAMERA_REQUEST_CODE
                     )
         }
         
     }
     
     companion object {
-        const val CAMERA_REQUEST_CORE = 100
+        const val CAMERA_REQUEST_CODE = 100
     }
 ```
 
