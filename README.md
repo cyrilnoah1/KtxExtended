@@ -18,6 +18,8 @@ extensions that help reduce the boilerplate in many of our Android projects.
                     arrayOf(Manifest.permission.CAMERA),
                     CAMERA_REQUEST_CODE
                     )
+                    
+            // Handle the response in onRequestPermissionResult().
         }
         
     }
@@ -34,7 +36,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_main)
 
         if(!checkCameraPermission()) requestCameraPermission()
-        
+        // Handle the response in onRequestPermissionResult().
     }
 ```
 
