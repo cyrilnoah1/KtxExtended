@@ -25,17 +25,15 @@ while structuring the source code implementation.
     private var mPackagePrivate: Int
     private val mPrivate: Float
     protected var mProtected: List<Int>
-    // (21/Jun/2018) TODO: Date format for TODO comments
+    // (21/Jun/2018) TODO: Format for TODO comments
 ```
 
 **Following are the naming conventions for common functions:**
 
 ```kotlin
-    // The extension functions should be prefixed with "ext".
-    fun String.extIsNotEmpty(){}
-    
     // The utility functions should be prefixed with "utl".
-    fun utlIsNetworkAvailable(){}
+    fun utlIsNetworkAvailable(): Boolean {
+    }
 ```
 
 **Following is the function and variable structuring format:**
